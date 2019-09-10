@@ -1,8 +1,28 @@
-#funny-img {
-    float: right;
-    margin-right: 4%;
+body {
+    max-width: 960px;
+}
+h1 {
+    text-align: center;
+}
+/* .jumbotron {
+    margin-left: 20%;
 }
 .card {
-    float: left;
-    margin: 2%;
+    margin-left: 20%;
 }
+
+/* this grid contains the random #, guess #++ made, & win/lose score  */
+/* #score-grid {
+    margin: 3% auto auto 13%;
+    max-width: 89%;
+}  */
+.crystal {
+    width: 100px;
+    height: 100px;;
+}
+
+
+/* attempt to reduce margin between grid boxes 
+ .grid {
+    margin-left: 0;
+} */

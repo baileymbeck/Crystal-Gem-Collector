@@ -15,17 +15,17 @@
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-
+<!--Header as jumbotron-->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Crystal Collector</h1>
-        <p class="lead">Just add up your crystals!</p>
     </div>
 </div>
-<div class="card" style="width: 18rem;">
+
+<!--Instruction card-->
+<div class="card">
+    <h5 class="card-header">How to Play</h5>
     <div class="card-body">
-        <h5 class="card-title">How to Play</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Price is Right Rules</h6>
         <p class="card-text">At the start of the game you will be given a random number.
             <br>
             The crystals will also have a hidden number that will display everytime you select one.
@@ -35,10 +35,94 @@
             Good luck!
         </p>
     </div>
+    </div>
+<!-- I just think this is a funny picture -- <img id="funny-img" src="./assets/images/IMG_5638.jpeg"> -->
+
+<!--Three card row to contain random #, guess #++, win/lose scores-->
+<div id="score-grid" class="container">
+    <div class="row">
+        <div class="grid col-lg-4">
+        <div class="card border-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+        </div>
+        </div>
+        <div class="grid col-lg-4">
+        <div class="card border-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+        </div>
+        </div>
+        <div class="grid col-lg-4">
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
 </div>
-<img id="funny-img" src="./assets/images/IMG_5638.jpeg">
+<div class="row">
+    <div class="col-lg-3">
+        <button type="button"  class="btn">
+                <img class="crystal" src="./assets/images/IMG_5638.jpeg">
+        </button>
+    </div>
+    <div class="col-lg-3">
+        <button type="button"  class="btn">
+                <img class="crystal" src="./assets/images/IMG_5638.jpeg">
+        </button>
+    </div>
+    <div class="col-lg-3">
+        <button type="button"  class="btn">
+                <img class="crystal" src="./assets/images/IMG_5638.jpeg">
+        </button>
+    </div>
+    <div class="col-lg-3">
+        <button type="button"  class="btn">
+                <img class="crystal" src="./assets/images/IMG_5638.jpeg">
+        </button>
+    </div>
+</div>
 
 
+
+
+
+<!-- <div class="row">
+        <div class="col">
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+        <div class="col"></div>
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+        <div class="col"></div>
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+            </div>
+</div> -->
 
 <!-- js link -->
     <script src="./assets/javascript/game.js"></script>
