@@ -13,6 +13,8 @@
     <link href="./assets/css/reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
@@ -59,7 +61,7 @@
         <div class="card border-light mb-3" style="max-width: 18rem;">
             <div class="card-header">Collected</div>
                 <div class="card-body">
-                    <p class="card-text"><span id="guessNumber">0</span></p>
+                    <p class="card-text"><span id="secretNumber">0</span></p>
                 </div>
         </div>
         </div>
@@ -67,8 +69,8 @@
             <div class="card border-light mb-3" style="max-width: 18rem;">
                 <div class="card-header">Score</div>
                     <div class="card-body">
-                        <p class="card-text">Wins</p><span id="wins"></span>
-                        <p class="card-text">Losses</p><span id="losses"></span>
+                        <p class="card-text">Wins</p><span id="wins">0</span>
+                        <p class="card-text">Losses</p><span id="losses">0</span>
                     </div>
             </div>
         </div>
@@ -79,22 +81,22 @@
 <!--Hooray for picture buttons, hope they work later-->
 <div class="row">
     <div class="col-lg-3">
-        <button type="button"  class="btn">
+        <button id="box-one" type="button"  class="btn">
                 <img class="crystal" src="./assets/images/IMG_5638.jpeg">
         </button>
     </div>
     <div class="col-lg-3">
-        <button type="button"  class="btn">
+        <button id="box-two" type="button"  class="btn">
                 <img class="crystal" src="./assets/images/IMG_5638.jpeg">
         </button>
     </div>
     <div class="col-lg-3">
-        <button type="button"  class="btn">
+        <button id="box-three" type="button"  class="btn">
                 <img class="crystal" src="./assets/images/IMG_5638.jpeg">
         </button>
     </div>
     <div class="col-lg-3">
-        <button type="button"  class="btn">
+        <button id="box-four" type="button"  class="btn">
                 <img class="crystal" src="./assets/images/IMG_5638.jpeg">
         </button>
     </div>
