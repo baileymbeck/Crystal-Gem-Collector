@@ -4,6 +4,9 @@ var secretNumber = 0;
 var wins = 0;
 var losses = 0;
 
+var randomChoices = ("");
+var secretChoices = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+
 
 // <---------- Psuedo code ---------->
 
@@ -11,7 +14,7 @@ var losses = 0;
 
 // ----- At start -----
 // per the youtube demo the game loads a random number with a value between 19 - 120 in id = "randomNumber"
-// the image buttons also has generated random numbers with a value between 1 - 12 in each box - id="box-one", id="box-two", etc
+// the img buttons have generated random numbers with a value between 1 - 12 in each box - id="box-one", id="box-two", etc
 
 //  ----- On click -----
 // when an img btn is clicked, the random number associated with it will appear in id = "secretNumber"
