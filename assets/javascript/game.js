@@ -15,43 +15,46 @@ var secretChoices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 // ----- At start -----
 // game loads a random number with a value between 19 - 120 in id = "randomNumber"
+    function restart(){
+        collectedNumber = 0;
+        //goal
+        randomNumber = 1 + Math.floor(Math.random() * 120)
+        $("#randomNumber").text(randomNumber);
 
-        setTimeout (function() {
-        var number = 1 + Math.floor(Math.random() * 120)
-        $("#randomNumber").text(number)
-        }
-        );
+        //crystal 1
+        var crystalNum1 = 1 + Math.floor(Math.random() * 12)
+        $("#boxOne").attr("data-number", crystalNum1);
+        console.log(crystalNum1)
+
+        //crystal 2
+        var crystalNum2 = 1 + Math.floor(Math.random() * 12)
+        $("#boxTwo").attr("data-number",crystalNum2);
+        console.log(crystalNum2)
+
+        //crystal 3
+        var crystalNum3 = 1 + Math.floor(Math.random() * 12)
+        $("#boxThree").attr("data-number",crystalNum3);
+        console.log(crystalNum3)
+
+        //crystal 4
+        var crystalNum4 = 1 + Math.floor(Math.random() * 12)
+        $("#boxFour").attr("data-number",crystalNum4);
+        console.log(crystalNum4)
+    }
+
+    restart();
+
  //the img buttons have generated random numbers with a value between 1 - 12 in each box 
 
 // random number for each img box
-        setTimeout (function() {
-            var number = 1 + Math.floor(Math.random() * 12)
-            $("boxOne")
-            console.log(number)
-        });
-        setTimeout (function() {
-            var number = 1 + Math.floor(Math.random() * 12)
-            $("boxTwo")
-            console.log(number)
-        });
-        setTimeout (function() {
-            var number = 1 + Math.floor(Math.random() * 12)
-            $("boxThree")
-            console.log(number)
-        });
-        setTimeout (function() {
-            var number = 1 + Math.floor(Math.random() * 12)
-            $("boxFour")
-            console.log(number)
 
-// button listener
-        $("#boxFour").on("click", function() {
-            number += collectedNumber;
-            });
-        }
-        );
+        $(".btn").on("click", function() {
+            var num = parseInt($(this).attr("data-number"));
+            collectedNumber = collectedNumber + num;
+            console.log(collectedNumber);
 
-
+            
+        });
 
 
 
