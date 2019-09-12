@@ -17,29 +17,31 @@ var secretChoices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 // game loads a random number with a value between 19 - 120 in id = "randomNumber"
     function restart(){
         collectedNumber = 0;
+        $("#collectedNumber").text(collectedNumber);
+
         //goal
-        randomNumber = 1 + Math.floor(Math.random() * 120)
+        randomNumber = 19 + Math.floor(Math.random() * 102)
         $("#randomNumber").text(randomNumber);
 
         //crystal 1
         var crystalNum1 = 1 + Math.floor(Math.random() * 12)
         $("#boxOne").attr("data-number", crystalNum1);
-        console.log(crystalNum1)
+        console.log("crystal1", crystalNum1)
 
         //crystal 2
         var crystalNum2 = 1 + Math.floor(Math.random() * 12)
         $("#boxTwo").attr("data-number",crystalNum2);
-        console.log(crystalNum2)
+        console.log("crystal2", crystalNum2)
 
         //crystal 3
         var crystalNum3 = 1 + Math.floor(Math.random() * 12)
         $("#boxThree").attr("data-number",crystalNum3);
-        console.log(crystalNum3)
+        console.log("crystal3", crystalNum3)
 
         //crystal 4
         var crystalNum4 = 1 + Math.floor(Math.random() * 12)
         $("#boxFour").attr("data-number",crystalNum4);
-        console.log(crystalNum4)
+        console.log("crystal4", crystalNum4)
     }
 
     restart();
@@ -52,8 +54,23 @@ var secretChoices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
             var num = parseInt($(this).attr("data-number"));
             collectedNumber = collectedNumber + num;
             console.log(collectedNumber);
+            $("#collectedNumber").text(collectedNumber);
 
-            
+            if(collectedNumber === randomNumber){
+                wins++;
+                $("#wins").text(wins);
+                // append the modal
+                restart()
+
+
+            } else if(collectedNumber > randomNumber){
+                losses++;
+                $("#losses").text(losses);
+                // append the modal
+                restart()
+
+            }
+
         });
 
 
