@@ -7,10 +7,9 @@ https://baileymbeck.github.io/Crystal-Gem-Collector/
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
-​
+
 ## General info
 This game was an exercise to practice site responsiveness as well as basic JS.
 
@@ -20,17 +19,6 @@ CSS
 JavaScript
 JQuery
 Bootstrap
-
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-​
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-​
 
 ## Status
 Project is: finished.
