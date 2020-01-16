@@ -3,7 +3,7 @@ Created guess game using javascript, jquery, bootstrap, css, and basic html
 ​
 ## Table of contents
 * [General info](#general-info)
-* [Demo]
+* #Demo
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
